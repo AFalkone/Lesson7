@@ -6,14 +6,14 @@
 // a = 9, b = -3 -> да
 // a = -3 b = 9 -> нет
 
-Console.WriteLine("Введите значение A"); 
-int number = Console.ToInt32(Console.ReadLine()); 
-Console.WriteLine("Введите значение B"); 
-double num2 = Console.ToInt32(Console.ReadLine()); 
-if(num2 == num1 / num2)
-{ Console.Write($"Число {num1} = квадрату числа {num2}"); } 
-else 
-{ Console.Write($"Число {num1} не равно квадрату числа {num2}"); }
+Console.WriteLine("Введите значение A");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение B");
+int numberB = Convert.ToInt32(Console.ReadLine());
+if (numberA == numberA / numberB)
+{ Console.Write($"Число {numberA} равно квадрату числа {numberB}"); }
+else
+{ Console.Write($"Число {numberA} не равно квадрату числа {numberB}"); }
 
 
 
