@@ -7,7 +7,6 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число ");
 int c = Convert.ToInt32(Console.ReadLine());
 int max = a;
-max = a;
 if (b > a)
 max = b;
 if (c > max)
