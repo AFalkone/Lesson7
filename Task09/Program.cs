@@ -15,15 +15,16 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 ->
 int firstDigit = number / 10; // для двухзначного числа делим на 10 (отбросится дробная часть)
 int secondDigit = number % 10; // остаток деления на 10 (ближайшее чсило которое делиться на 10 это 70, 8 остается в остатке)
 
-if (firstDigit > secondDigit)
-{
-    Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}");
-}
-else
-{
-    Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
-}
+// if (firstDigit > secondDigit)
+// {
+//     Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}");
+// }
+// else
+// {
+//     Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
+// }
 
-
+int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
 
 
