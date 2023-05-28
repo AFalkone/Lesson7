@@ -42,7 +42,7 @@ void FillArray(int[] array) //заполняем элементы массива
     var rnd = new Random(); // new Random для псевдочисел желательно вводить через переменную
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = rnd().Next(0 , 2); //диапазон
+        array[i] = rnd.Next(0 , 2); //диапазон
     }
 }
 
