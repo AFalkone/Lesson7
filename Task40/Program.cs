@@ -20,6 +20,6 @@ Console.WriteLine(existTriangle ? "Существует": "Не существу
 
 bool IsExistTriangle (int a, int b, int c)
 {
-    if (a+b > c && a+c > b && b+c > a) return true;
+    if (a+b > c && a+c > b && b+c > a) return true; // return a+b > c && a+c > b && b+c > a
     else return false;
 }
