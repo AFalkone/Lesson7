@@ -7,11 +7,11 @@ int[,] array = new int[m, n]; // создаем двумерный массив 
 FillArrayRandomNumbers(array);
 
 Console.WriteLine("Исходный массив");
-
+PrintArray(array);
 
 Console.WriteLine("Сортированный  массив");
 SortRows(array);
-
+PrintArray(array);
 
 int Prompt(string message)
 {
@@ -51,5 +51,20 @@ static void SortRows(int[,] arr)
                 }
             }
         }
+    }
+}
+
+
+
+
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine("");
     }
 }
